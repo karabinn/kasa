@@ -1,0 +1,44 @@
+$color_1: #ff6060;
+$color_2: black;
+$font-family_1: Montserrat;
+
+.error-content {
+  margin-bottom: 100px;
+  text-align: center;
+  font-family: $font-family_1;
+  color: $color_1;
+  h1 {
+    font-size: 288px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+  }
+  p {
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+    color: $color_1;
+  }
+}
+.error-link {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: $color_2;
+}
+@media only screen and (max-width: 768px) {
+  .error-content {
+    h1 {
+      font-size: 96px;
+      margin-top: 50px;
+    }
+    p {
+      text-align: center;
+      font-size: 18px;
+      margin: 50px 75px;
+    }
+  }
+  .error-link {
+    font-size: 14px;
+  }
+}

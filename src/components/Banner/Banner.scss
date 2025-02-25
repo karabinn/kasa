@@ -1,0 +1,43 @@
+$color_1: white;
+
+.kasa-banner {
+  width: 100%;
+  max-width: 1240px;
+  height: 233px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  box-shadow: 0px 15px 30px -4px rgba(0, 0, 0, 0.27);
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  p {
+    position: absolute;
+    color: $color_1;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    top: 20%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .kasa-banner {
+    max-width: 345px;
+    height: 111px;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    p {
+      font-size: 24px;
+      text-align: start;
+      font-weight: 700;
+      margin-left: 50px;
+      top: auto;
+    }
+  }
+}

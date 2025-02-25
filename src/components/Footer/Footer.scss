@@ -1,0 +1,18 @@
+$color_1: white;
+$font-family_1: Montserrat;
+$background-color_1: black;
+
+.kasa-footer {
+  background-color: $background-color_1;
+  padding: 20px;
+  text-align: center;
+}
+.footer-logo {
+  width: 100px;
+  height: auto;
+}
+p {
+  font-size: 16px;
+  color: $color_1;
+  font-family: $font-family_1;
+}

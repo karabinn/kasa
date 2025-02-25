@@ -1,0 +1,39 @@
+$color_1: #ff6060;
+
+.profile {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: right;
+  text-align: right;
+
+  img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin: 10px;
+  }
+
+  .profile-name {
+    white-space: pre-wrap;
+    width: 70%;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-left: 23%;
+    color: $color_1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile {
+    align-items: center;
+  }
+  .profile-name {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .profile img {
+    width: 32px;
+    height: 32px;
+  }
+}

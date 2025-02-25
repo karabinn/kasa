@@ -1,0 +1,33 @@
+$color_1: #ffffff;
+$background-color_1: #ff6060;
+
+.tag-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-left: inherit;
+  .tag {
+    border-radius: 10px;
+    padding-left: 13px;
+    padding-right: 13px;
+    background-color: $background-color_1;
+    color: $color_1;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  @media screen and (max-width: 768px) {
+    .tag-list {
+      .tag {
+        padding-left: 6px;
+        padding-right: 6px;
+        height: 18px;
+        line-height: 18px;
+        font-size: 10px;
+        font-weight: 600;
+      }
+    }
+  }
+}

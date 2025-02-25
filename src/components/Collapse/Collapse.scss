@@ -1,0 +1,53 @@
+$color_1: white;
+$font-family_1: Montserrat;
+$background-color_1: #ff6060;
+
+.collapse-container {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.collapse-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $background-color_1;
+  color: $color_1;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  height: 52px;
+}
+
+.collapse-title {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: $font-family_1;
+}
+
+.arrow {
+  width: 24px;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.arrow.open {
+  transform: rotate(-180deg);
+}
+
+@media screen and (max-width: 768px) {
+  .collapse-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .collapse-header {
+    display: flex;
+    height: 15px;
+    border-radius: 5px;
+  }
+
+  .collapse-title {
+    font-size: 15px;
+  }
+}

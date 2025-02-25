@@ -1,0 +1,30 @@
+$color_1: white;
+
+.home-container {
+  max-width: 1240px;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  justify-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-content: center;
+  padding: 29px;
+  max-width: 1240px;
+}
+
+@media screen and (max-width: 768px) {
+  .home-container {
+    background-color: $color_1;
+  }
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: unset;
+  }
+}
