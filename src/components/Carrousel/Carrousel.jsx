@@ -21,19 +21,22 @@ function Carrousel({ images }) {
 
   return (
     <div className="carrousel">
-      <button onClick={prevSlide} className="prev">
-        <i className="fa-solid fa-chevron-left"></i>
-      </button>
-
       <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
+      {images.length > 1 && (
+        <>
+          <button onClick={prevSlide} className="prev">
+            <i className="fa-solid fa-chevron-left"></i>
+          </button>
 
-      <button onClick={nextSlide} className="next">
-        <i className="fa-solid fa-chevron-right"></i>
-      </button>
+          <button onClick={nextSlide} className="next">
+            <i className="fa-solid fa-chevron-right"></i>
+          </button>
 
-      <div className="counter">
-        {currentIndex + 1} / {images.length}
-      </div>
+          <div className="counter">
+            {currentIndex + 1} / {images.length}
+          </div>
+        </>
+      )}
     </div>
   );
 }
