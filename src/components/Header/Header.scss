@@ -6,8 +6,9 @@ $font-family_1: Montserrat;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1240px;
 }
 .header-logo {
   align-self: flex-start;
@@ -37,8 +38,10 @@ nav {
 }
 @media screen and (max-width: 768px) {
   .kasa-header {
-    margin: 10px;
     padding: 0;
+    max-width: 345px;
+    margin-left: auto;
+    margin-right: auto;
     .header-logo {
       width: 145px;
     }
